@@ -4,16 +4,16 @@ require_once "src/FindAndReplace.php";
     {
         function test_checkArray()
         {
-                $test_string = new FindAndReplace;
-                //Arrange
-                $input1 = "I have a cat and a cat";
-                $input2 = "cat";
-                $input3 = "dog";
-                $test_string->checkArray($input1, $input2, $input3);
-                //Act
-                $result = $test_string->checkArray($input1, $input2, $input3);
-                //Assert
-                $this->AssertEquals(['I', 'have', 'a', 'dog', 'and', 'a', 'dog'], $result);
+            $test_string = new FindAndReplace;
+            //Arrange
+            $input1 = "I have 1 cat and a cathedral.";
+            $input2 = "1";
+            $input3 = "12";
+            $test_string->checkArray($input1, $input2, $input3);
+            //Act
+            $result = $test_string->checkArray($input1, $input2, $input3);
+            //Assert
+            $this->AssertEquals("i have 12 cat and a cathedral.", $result);
         }
     }
  ?>

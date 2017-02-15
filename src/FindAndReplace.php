@@ -2,10 +2,15 @@
 
     class FindAndReplace {
 
-        function checkArray ($phrase)
+        function checkArray ($phrase, $search_term)
         {
-            $explodedPhrase = explode(' ', $phrase);
-            return $explodedPhrase;
+            $exploded_phrase = explode(' ', $phrase);
+
+            if (in_array($search_term, $exploded_phrase)) {
+                return $search_term;
+            }
+
+
         }
 
 

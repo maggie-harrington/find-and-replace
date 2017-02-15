@@ -6,13 +6,14 @@ require_once "src/FindAndReplace.php";
         {
                 $test_string = new FindAndReplace;
                 //Arrange
-                $input1 = "I have a cat";
+                $input1 = "I have a cat and a cat";
                 $input2 = "cat";
-                $test_string->checkArray($input1, $input2);
+                $input3 = "dog";
+                $test_string->checkArray($input1, $input2, $input3);
                 //Act
-                $result = $test_string->checkArray($input1, $input2);
+                $result = $test_string->checkArray($input1, $input2, $input3);
                 //Assert
-                $this->AssertEquals("cat", $result);
+                $this->AssertEquals(['I', 'have', 'a', 'dog', 'and', 'a', 'dog'], $result);
         }
     }
  ?>

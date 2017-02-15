@@ -49,9 +49,8 @@ This project demonstrates building an app using PHPUnit, Silex and Twig framewor
 |  User enters search word                                       |  cat                        |                            |
 |  User enters word to replace                                   |  "dog"                      |                            |
 |  String is split into array                                    |  I have a cat               | ["I", "have", "a", "cat"]  |
-|  Find search word in phrase                                    |  ["I", "have", "a", "cat"]  |  cat                       |
 |  Replace search word in phrase                                 |  cat                        |  dog                       |
-|  Push replaced word into phrase array                          |  dog                        |  ["I", "have", "a", "dog"] |
+|  Check for multiple instances of search word                   |  I have a cat and a cat     |  I have a dog and a dog    |
 |  Convert array back to string and return phrase with new word  |  ["I", "have", "a", "dog"]  |  I have a dog              |
 
 * Phase 4 - Initial Silex framework with "Hello" on home page

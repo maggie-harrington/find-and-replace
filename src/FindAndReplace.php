@@ -2,7 +2,19 @@
 
     class FindAndReplace {
 
-        function checkArray ($phrase, $search_term, $replace_term)
+        private $phrase;
+
+        function __construct($new_phrase){
+
+            $this->phrase = $new_phrase;
+        }
+
+        function getFindAndReplace()
+        {
+            return $this->phrase;
+        }
+
+        static function checkArray ($phrase, $search_term, $replace_term)
         {
             $phrase = strtolower($phrase);
 

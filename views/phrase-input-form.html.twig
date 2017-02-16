@@ -1,17 +1,22 @@
 <html>
 <head>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Find and Replace</title>
 </head>
 <body>
     <div class="container">
         <h1>Find and Replace</h1>
         <form action="/phrase-output-form" method="post">
             <label for="phrase">Enter a phrase</label>
-            <input type="text" name="phrase" id="phrase">
+            <input type="text" name="phrase" id="phrase" class="form-control">
+            <br><br>
             <label for="search_term">Enter a word to search for</label>
-            <input type="text" name="search_term" id="search_term">
+            <input type="text" name="search_term" id="search_term" class="form-control">
+            <br><br>
             <label for="replace_term">Enter a word to replace the search term</label>
-            <input type="text" name="replace_term" id="replace_term">
+            <input type="text" name="replace_term" id="replace_term" class="form-control">
+            <br><br>
             <button type="submit" name="button">Go!</button>
         </form>
     </div>

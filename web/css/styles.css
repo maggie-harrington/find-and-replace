@@ -1,0 +1,12 @@
+body {
+    background-color: #007399;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: #009999;
+}
+input {
+    height: 50px;
+    width: 100px;
+}
